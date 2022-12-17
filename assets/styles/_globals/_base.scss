@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    button {
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: var(--font);
+}
