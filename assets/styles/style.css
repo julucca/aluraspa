@@ -36,6 +36,7 @@ a, a:visited, a:active {
   --color-primary: #3A3845;
   --color-secondary: #874356;
   --color-tertiary: #F6E7D8;
+  --color-base: #ffffff;
   --font: "Montserrat", sans-serif;
 }
 
@@ -52,7 +53,7 @@ a, a:visited, a:active {
   }
 }
 .header__logo {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--color-primary);
   letter-spacing: 0.15rem;
 }
@@ -74,6 +75,8 @@ a, a:visited, a:active {
 .header nav ul {
   display: flex;
   gap: 2rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
 }
 .header nav ul li a:hover,
 .header nav ul li a:active {
@@ -83,4 +86,30 @@ a, a:visited, a:active {
   .header nav {
     display: block;
   }
+}
+
+.banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%), url(../img/banner.jpeg) 27% 80%/cover no-repeat;
+  min-height: 21.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner__inner {
+  text-align: center;
+  color: var(--color-base);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  max-width: clamp(16.75rem, 16.75rem + 5vw, 23.75rem);
+}
+.banner__inner h1 {
+  font-size: clamp(2rem, 1rem + 2vw, 2.5rem);
+  padding-bottom: 0.4rem;
+}
+.banner__inner h2 {
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  background-color: var(--color-secondary);
+  padding-block: 0.1rem;
 }/*# sourceMappingURL=style.css.map */

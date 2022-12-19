@@ -10,7 +10,7 @@
     }
 
     &__logo {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         color: var(--color-primary);
         letter-spacing: .15rem;
         b {
@@ -34,6 +34,8 @@
         ul {
             display: flex;
             gap: 2rem;
+            font-size: .90rem;
+            text-transform: uppercase;
             li {
                 a:hover,
                 a:active {
