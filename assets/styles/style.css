@@ -25,6 +25,12 @@ h3 {
 
 p {
   font-size: 1rem;
+  line-height: 1.1rem;
+}
+@media (min-width: 900px) {
+  p {
+    line-height: 1.2rem;
+  }
 }
 
 a, a:visited, a:active {
@@ -89,7 +95,7 @@ a, a:visited, a:active {
 }
 
 .banner {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%), url(../img/banner.jpeg) 27% 80%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%), url(../img/banner.jpeg) 27% 72%/cover no-repeat;
   min-height: 21.875rem;
   display: flex;
   flex-direction: column;
@@ -112,4 +118,67 @@ a, a:visited, a:active {
   letter-spacing: 1.5px;
   background-color: var(--color-secondary);
   padding-block: 0.1rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-inline: auto;
+  max-width: clamp(21.875rem, 1rem + 68vw, 87.5rem);
+}
+@media (min-width: 900px) {
+  .services {
+    gap: 2rem;
+    padding: 5rem 1rem;
+  }
+}
+.services h3 {
+  color: var(--color-secondary);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.services h2 {
+  color: var(--color-primary);
+  font-size: clamp(1.2rem, 0.75rem + 2.25vw, 2.5rem);
+  font-weight: 400;
+  margin-inline: auto;
+  max-width: 48.75rem;
+}
+.services__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 1.5rem;
+}
+@media (min-width: 900px) {
+  .services__cards {
+    flex-direction: row;
+    gap: 1.25rem;
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  .services__cards li {
+    width: 35vw;
+  }
+}
+.services__cards li img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 12.5rem;
+}
+.services__cards li h4 {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  padding-block: 0.5rem;
+}
+@media (min-width: 900px) {
+  .services__cards li h4 {
+    font-size: 1.75rem;
+    padding-block: 1.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
