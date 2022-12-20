@@ -1,0 +1,33 @@
+.content {
+    text-align: center;
+    margin-inline: auto;
+    padding: 3rem 1rem;
+    max-width: 31.25rem;
+    @media (min-width: 900px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;       
+        gap: 2rem;
+        color: var(--color-primary);
+        padding: 5rem 3rem;
+        max-width: 70rem;
+    }
+    img {
+        width: 90%;
+        max-width: 19.687rem;
+        @media (min-width: 900px) {
+            width: 100%;
+            max-width: none;
+        }
+    }
+    div {
+        color: var(--color-primary);
+        h2 {
+            font-size: clamp(1.75rem, .75rem + 2.25vw, 2.5rem);
+        }
+        h3 {
+            font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
+            padding-block: 1rem;
+        }
+    }
+}
