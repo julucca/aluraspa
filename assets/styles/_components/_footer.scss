@@ -1,0 +1,17 @@
+@mixin bg-cores($side, $colors...) {
+    @if ($side == left) {
+        background: linear-gradient(to left, $colors)
+    }
+    @else {
+        background: linear-gradient(to right, $colors)
+    } 
+
+}
+    
+
+footer {
+    color: var(--color-base);
+    text-align: center;
+    padding: 1rem;
+    @include bg-cores(left, var(--color-primary), #312f3a);
+}

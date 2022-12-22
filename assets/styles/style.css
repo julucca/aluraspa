@@ -268,4 +268,11 @@ a, a:visited, a:active {
 .content div h3 {
   font-size: clamp(1rem, 1rem + 1.5vw, 1.5rem);
   padding-block: 1rem;
+}
+
+footer {
+  color: var(--color-base);
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to left, var(--color-primary), #312f3a);
 }/*# sourceMappingURL=style.css.map */
