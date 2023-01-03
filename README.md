@@ -7,21 +7,12 @@
 <p>A proposta foi recriar a página trazendo mais responsividade e explorando as possibilidades do Sass.</p>
 
 <div align="center">
-  <img width=600px src="./assets/img/git-aluraspa.gif">
+    <img width=600px src="./assets/img/git-aluraspa.gif">
 </div><br>
 
 <p>Para isso foram usadas media queries aninhadas e funções de módulos integrados como sass:math para textos mais responsivos.</p>
 
-<div align="center">
-  <img width=300px src="./assets/img/git-aluraspa-services.gif">
-	<img width=300px src="./assets/img/git-aluraspa-services-2.png">
-</div><br>
-
 <p>Também foram usadas as funcionalidades @mixin e @include para facilitar a reutilização de blocos de estilo.</p>
-
-<div align="center">
-  <img width=300px src="./assets/img/git-aluraspa-footer.png">
-</div><br>
 
 <h2>:computer: Tecnologias utilizadas</h2>
 
